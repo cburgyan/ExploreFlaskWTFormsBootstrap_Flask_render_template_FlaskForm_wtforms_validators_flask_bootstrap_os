@@ -8,7 +8,9 @@
 	<div class="container">
 		<h1>Welcome</h1>
 		<p>Are you ready to discover my secret?</p>
-		<button class="btn btn-primary btn-lg" href=" {{ url_for('login') }} ">Login</button>
+<!--		<button class="btn btn-primary btn-lg" href="{{ url_for('login_page') }}">Login</button>-->
+			{% set login_page_path = url_for('login_page') %}
+			<button class="btn btn-primary btn-lg" type='button' onclick="window.location.href='{{ login_page_path }}'">Login</button>
 	</div>
 </div>
 </body>
