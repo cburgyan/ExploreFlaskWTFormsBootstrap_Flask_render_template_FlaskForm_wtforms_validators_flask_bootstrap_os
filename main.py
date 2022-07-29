@@ -1,8 +1,6 @@
 from flask import Flask, render_template, url_for, request
 from flask_wtf import FlaskForm
-from werkzeug.utils import redirect
 from wtforms import StringField, validators, SubmitField, PasswordField
-from wtforms.validators import DataRequired
 import os
 
 
